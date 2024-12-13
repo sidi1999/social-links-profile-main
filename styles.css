@@ -1,0 +1,138 @@
+body {
+    background-color: var(--grisoscuro-color);
+    color: var(--balanco-color);
+    font-family: Inter;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--balanco-color);
+  }
+  
+  
+  :root {
+    --verdeoscuro-color: hsl(75, 94%, 57%);
+  
+    --balanco-color: hsl(0, 0%, 100%);;
+ 
+    --grisoscuro-color: hsl(0, 0%, 8%);
+ 
+    --grismedio-color: hsl(0, 0%, 12%);
+ 
+    --grisclaro-color: hsl(0, 0%, 20%)
+ }
+  .imagen {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Asegura que la imagen sea circular */
+    
+  }
+  
+ 
+  
+  .container {
+    background-color: var(--grismedio-color);
+    height: 600px;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+
+  .datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  .ubc{
+    color: var(--verdeoscuro-color);
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+  
+  
+  .redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .enlace{
+    background-color: var(--grisclaro-color);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+.attribution{
+    padding: 10px;
+}
+
+.orange{
+    color: rgb(201, 168, 109);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+      height: auto;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+  
+    .container {
+    margin: 0 auto;
+      width: 300px;
+      height: 500px;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .imagen {
+      width: 50px;
+      height: 50px;
+    }
+  .redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    .enlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    font-size: 12px;
+    padding: 10px;
+      
+    }
+  
+    p {
+      font-size: 10px;
+    }
+  }
+  
+  
